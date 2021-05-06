@@ -1,0 +1,199 @@
+form.sign-in-form{
+    z-index:2;
+}
+
+.group{
+	padding: 0px 48px;
+	margin: 8px;
+}
+
+
+
+.group .checkboxlogin {
+  display: none;
+}
+
+.group .labellog {
+  position: relative;
+  cursor: pointer;
+}
+
+.group .labellog::before {
+  content: "";
+  background: url("img/check-circle.svg");
+  background-position: center;
+  background-size: contain;
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  left: -31px;
+  top: 3px;
+
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+.group .checkboxlogin:checked + .labellog::before {
+  transform: scale(1) rotateZ(0deg);
+}
+
+.group .labellog::after {
+  content: "";
+  border: 2px solid #27ae60;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: -30px;
+  top: 4px;
+  border-radius: 50%;
+}
+
+#sliderdiv {
+  background-color: rgb(248, 247, 247);
+  width: 100%;
+  display: none ;
+  float: left;
+}
+#sliderdivmain {
+  background-color: white;
+  width: 100%;
+  display: none ;
+  float: left;
+}
+
+.mainlabel{
+  font-size: 20px;
+  margin-top: 13px;
+}
+
+.filterOptions{
+  text-align: left;
+  font-size: 15px;
+  margin-left: 25px;
+}
+.plus{
+  font-size: 15px;
+  margin-left: 50px;
+  color: grey;
+  transition: transform .4s;
+}
+.plus:hover{
+  cursor:pointer;
+  color: #d3af37 !important;
+}
+.rotateplusclock{
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  
+}
+.rotateplusanti{
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+}
+#clearall{
+  padding-top:15px;
+}
+#clearall:hover{
+  color: #d3af37 !important;
+}
+.hiddenplus{
+  display: none;
+}
+.hiddenclear{
+  display: none;
+}
+.afterhidden{
+  margin-bottom: 10% !important;
+}
+
+/* checkbox */
+.containercheck {
+      max-width: 640px ;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+      font-size: 13px ;
+      text-align: center;
+  }
+ul.ks-cboxtags {
+  list-style: none ;
+  
+}
+ul.ks-cboxtags li{
+  display: block ;
+}
+ul.ks-cboxtags li label{
+  display: block ;
+  background-color: rgba(230, 230, 230, 0.9) ;
+  border: 2px solid rgba(139, 139, 139, .3) ;
+  color: #adadad ;
+  border-radius: 25px ;
+  white-space: nowrap ;
+  margin: 3px 0px ;
+  -webkit-touch-callout: none ;
+  -webkit-user-select: none ;
+  -moz-user-select: none ;
+  -ms-user-select: none ;
+  user-select: none ;
+  -webkit-tap-highlight-color: transparent ;
+  transition: all .2s ;
+}
+
+ul.ks-cboxtags li label {
+  padding: 4px 6px ;
+  cursor: pointer ;
+}
+
+ul.ks-cboxtags li label::before {
+  display: inline-block ;
+  font-style: normal ;
+  font-variant: normal ;
+  text-rendering: auto ;
+  -webkit-font-smoothing: antialiased ;
+  font-family: "Font Awesome 5 Free" ;
+  font-weight: 900 ;
+  font-size: 12px ;
+  padding: 2px 6px 2px 2px ;
+  content: "\f067" ;
+  transition: transform .3s ease-in-out ;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before,input[type="radio"]:checked + label::before {
+  content: "\f00c" ;
+  transform: rotate(-360deg) ;
+  transition: transform .3s ease-in-out ;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label, input[type="radio"]:checked + label  {
+  border: 2px solid goldenrod ;
+  background-color: #d3af37 ;
+  color: #fff ;
+  transition: all .2s ;
+}
+
+ul.ks-cboxtags li input[type="checkbox"], input[type="radio"] {
+display: absolute ;
+}
+ul.ks-cboxtags li input[type="checkbox"], input[type="radio"] {
+position: absolute ;
+opacity: 0 ;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label, input[type="radio"]:focus + label  {
+border: 2px solid #c7a432d9 ;
+}
+
+.box{
+  display: block;
+  width: max-content;
+}
+.name, .show{
+  display: inline-block;
+}
+.show{
+  display: inline-block;
+  float: right;
+}
+
+
+
+
+
+
